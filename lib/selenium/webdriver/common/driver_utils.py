@@ -29,7 +29,7 @@ def run_selenium_doker():
     try:
         process = subprocess.Popen(run_script)
         code = process.wait()
-    except Exception, e:
+    except Exception(e):
         if e.errno != errno.ECONNRESET:
             raise
         pass
